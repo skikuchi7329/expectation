@@ -18,6 +18,13 @@ export default function page({title, aim, yamedoki, additional}:Props) {
       <h1>title</h1>
       <p>titleの狙い目・やめ時等を紹介</p>
       <table>
+        <thead>
+          <tr>
+            <th>機種名</th>
+            <th>狙い目</th>
+            <th></th>
+          </tr>
+        </thead>
         <tbody>
           <tr>
             <th>狙い目</th>
