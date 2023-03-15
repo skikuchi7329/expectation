@@ -16,26 +16,30 @@ const Table = () => {
       <table>
         <thead>
           <tr>
-            <th>機種名</th>
-            <th>狙い目</th>
-            <th>やめ時</th>
-            <th>補足</th>
-            <th>外部リンク</th>
+            <th className="width22">機種名</th>
+            <th className="width22">狙い目</th>
+            <th className="width22">やめ時</th>
+            <th className="width24">補足</th>
+            <th>リンク</th>
           </tr>
         </thead>
         <tbody>
+        <ul>
+          <li>
           {data.map(({title, target, quit, additional, link}:Props)=>(
           <tr>
-          <th>{title}</th>
+          <th className="nowrap">{title}</th>
           <th>{target}</th>
           <th>{quit}</th>
           <th>{additional}</th>
           <a href={link} target="_blank" rel="noopener noreferrer">
-            {link}
+            {link}参考
           </a>
         </tr>
 ))}
 
+          </li>
+        </ul>
         </tbody>
       </table>
     </StyledTable>
