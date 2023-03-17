@@ -1,6 +1,5 @@
 import StyledTable from "./index.styled";
-import {data } from "../../../data/data"
-
+import { data } from "../../../data/data";
 
 type Props = {
   title: string;
@@ -24,22 +23,17 @@ const Table = () => {
           </tr>
         </thead>
         <tbody>
-        <ul>
-          <li>
-          {data.map(({title, target, quit, additional, link}:Props)=>(
-          <tr>
-          <th className="nowrap">{title}</th>
-          <th>{target}</th>
-          <th>{quit}</th>
-          <th>{additional}</th>
-          <a href={link} target="_blank" rel="noopener noreferrer">
-            {link}参考
-          </a>
-        </tr>
-))}
-
-          </li>
-        </ul>
+          {data.map(({ title, target, quit, additional, link }: Props) => (
+            <tr>
+              <th className="nowrap">{title}</th>
+              <th>{target}</th>
+              <th>{quit}</th>
+              <th>{additional}</th>
+              <a href={link} target="_blank" rel="noopener noreferrer">
+                {link}
+              </a>
+            </tr>
+          ))}
         </tbody>
       </table>
     </StyledTable>

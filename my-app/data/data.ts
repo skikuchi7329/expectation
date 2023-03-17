@@ -4,7 +4,7 @@ export const data = [
     target: "ファン数3800~",
     quit: "アイキャッチ確認後やめ",
     additional: "設定１と２でかなり変わるのでボーダーを変える必要があり、店の傾向を掴む必要がある",
-    link: "",
+    
   },
   {
     title: "青鬼",
@@ -217,6 +217,13 @@ export const data = [
     target: "at間800~ ボナ4スルー",
     quit: "妄想タイム抜けやめ",
     additional: "リセット台を妄想タイム抜けまで打つ。 詳しい狙い目はスロプロ狐様のYouTubeを参考。",
+    link: "",
+  },
+  {
+    title: "グレンラガン",
+    target: "570~",
+    quit: "引き戻しゾーン抜けやめ",
+    additional: "リセット台を0~70ゲームほど回す",
     link: "",
   },
 ];
