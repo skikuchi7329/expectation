@@ -10,6 +10,16 @@ type Props = {
 };
 
 const Table = () => {
+    const menu = document.querySelector(".toggleMenu")
+    function toggle() {
+      const hidden = document.querySelector(".hiddenMenu");
+      menu?.classList.toggle("is-active");
+      hidden?.classList.toggle("is-open");
+    }
+
+    function toggleMenu () {
+      toggle();
+    }
   return (
     <StyledTable>
       <table>
@@ -18,20 +28,20 @@ const Table = () => {
             <th className="width22">機種名</th>
             <th className="width22">狙い目</th>
             <th className="width22">やめ時</th>
-            <th className="width24">補足</th>
-            <th>リンク</th>
           </tr>
         </thead>
         <tbody>
-          {data.map(({ title, target, quit, additional, link }: Props) => (
-            <tr>
+          {data.map(({ title, target, quit, additional, link, }: Props) => (
+            <tr onClick={toggleMenu} className="toggleMenu">
               <th className="nowrap">{title}</th>
               <th>{target}</th>
               <th>{quit}</th>
-              <th>{additional}</th>
-              <a href={link} target="_blank" rel="noopener noreferrer">
-                {link}
-              </a>
+              <th className="hiddenMenu">
+                <ul>
+                  <li>{additional}</li>
+                  <li>{link}</li>
+                </ul>
+              </th>
             </tr>
           ))}
         </tbody>

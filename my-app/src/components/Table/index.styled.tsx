@@ -26,6 +26,17 @@ const StyledTable = styled.div`
     }
   }
 
+  .hiddenMenu {
+    display: none;
+  }
+
+  .hiddenMenu.is-open {
+    display: flex;
+    flex-direction: column;
+    ul li {
+      list-style: none;
+    }
+  }
 `
 
 export default StyledTable;
