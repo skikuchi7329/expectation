@@ -26,16 +26,13 @@ const StyledTable = styled.div`
     }
   }
 
-  .hiddenMenu {
+  .closeMenu {
     display: none;
   }
 
-  .hiddenMenu.is-open {
+  .closeMenu.is-open {
     display: flex;
     flex-direction: column;
-    ul li {
-      list-style: none;
-    }
   }
 `
 

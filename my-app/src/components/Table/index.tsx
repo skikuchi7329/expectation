@@ -1,53 +1,50 @@
-import StyledTable from "./index.styled";
+import React, { useState } from "react";
 import { data } from "../../../data/data";
 
-type Props = {
-  title: string;
-  target: string | number;
-  quit: string;
-  additional?: string;
-  link?: string;
-};
+export default function Table() {
+  const [expandedRows, setExpandedRows] = useState<number[]>([]);
 
-const Table = () => {
-    const menu = document.querySelector(".toggleMenu")
-    function toggle() {
-      const hidden = document.querySelector(".hiddenMenu");
-      menu?.classList.toggle("is-active");
-      hidden?.classList.toggle("is-open");
+  const handleRowClick = (index: number) => {
+    const currentIndex = expandedRows.indexOf(index);
+    const newExpandedRows = [...expandedRows];
+    if (currentIndex === -1) {
+      newExpandedRows.push(index);
+    } else {
+      newExpandedRows.splice(currentIndex, 1);
     }
+    setExpandedRows(newExpandedRows);
+  };
 
-    function toggleMenu () {
-      toggle();
-    }
   return (
-    <StyledTable>
-      <table>
-        <thead>
-          <tr>
-            <th className="width22">機種名</th>
-            <th className="width22">狙い目</th>
-            <th className="width22">やめ時</th>
-          </tr>
-        </thead>
-        <tbody>
-          {data.map(({ title, target, quit, additional, link, }: Props) => (
-            <tr onClick={toggleMenu} className="toggleMenu">
-              <th className="nowrap">{title}</th>
-              <th>{target}</th>
-              <th>{quit}</th>
-              <th className="hiddenMenu">
-                <ul>
-                  <li>{additional}</li>
-                  <li>{link}</li>
-                </ul>
-              </th>
+    <table>
+      <thead>
+        <tr>
+          <th>機種名</th>
+          <th>狙い目</th>
+          <th>やめ時</th>
+        </tr>
+      </thead>
+      <tbody>
+        {data.map((row, index) => (
+          <React.Fragment key={index}>
+            <tr onClick={() => handleRowClick(index)}>
+              <td>{row.title}</td>
+              <td>{row.target}</td>
+              <td>{row.quit}</td>
             </tr>
-          ))}
-        </tbody>
-      </table>
-    </StyledTable>
+            {expandedRows.includes(index) && (
+              <tr>
+                <td colSpan={3}>
+                  <div>
+                    <p>補足: {row.additional}</p>
+                    <p>リンク: {row.link}</p>
+                  </div>
+                </td>
+              </tr>
+            )}
+          </React.Fragment>
+        ))}
+      </tbody>
+    </table>
   );
-};
-
-export default Table;
+}

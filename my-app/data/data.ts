@@ -3,8 +3,9 @@ export const data = [
     title: "アイマス",
     target: "ファン数3800~",
     quit: "アイキャッチ確認後やめ",
-    additional: "設定１と２でかなり変わるのでボーダーを変える必要があり、店の傾向を掴む必要がある",
-    
+    additional:
+      "設定１と２でかなり変わるのでボーダーを変える必要があり、店の傾向を掴む必要がある",
+    link: "",
   },
   {
     title: "青鬼",
@@ -83,14 +84,16 @@ export const data = [
     title: "Wake Up Girls",
     target: "液晶180~ 引き継ぎ時は0~",
     quit: "有理消灯やめ",
-    additional: "目押しが苦手な人はボーダーを上げる必要がある。詳しくはたらればさんを参考",
+    additional:
+      "目押しが苦手な人はボーダーを上げる必要がある。詳しくはたらればさんを参考",
     link: "https://note.com/g1slotapple/n/n7da7acbac7c1#anzR4",
   },
   {
     title: "うしおととら",
     target: "365~",
     quit: "有利消灯後のCZ抜けやめ",
-    additional: "リセット後はAT直撃抽選をしているので19ゲーム回して当たらなかったらやめ",
+    additional:
+      "リセット後はAT直撃抽選をしているので19ゲーム回して当たらなかったらやめ",
     link: "",
   },
   {
@@ -118,7 +121,8 @@ export const data = [
     title: "沖ドキ2",
     target: "650~",
     quit: "有利消灯後やめ",
-    additional: "リールサイドランプによってボーダーを帰る必要あり。有利引き継ぎ台は天国準備確定なので打つ。",
+    additional:
+      "リールサイドランプによってボーダーを帰る必要あり。有利引き継ぎ台は天国準備確定なので打つ。",
     link: "",
   },
   {
@@ -153,7 +157,8 @@ export const data = [
     title: "鬼浜",
     target: "340~(リセ後270~)",
     quit: "128ゾーン抜けやめ",
-    additional: "リセット台は0~128まで打って高モード示唆が出ればツッパ。詳細は期待値見える化様参照",
+    additional:
+      "リセット台は0~128まで打って高モード示唆が出ればツッパ。詳細は期待値見える化様参照",
     link: "https://slotjin.com/tenjoukitaichi/onihama-kyotou/",
   },
   {
@@ -216,7 +221,8 @@ export const data = [
     title: "GANTZ極",
     target: "at間800~ ボナ4スルー",
     quit: "妄想タイム抜けやめ",
-    additional: "リセット台を妄想タイム抜けまで打つ。 詳しい狙い目はスロプロ狐様のYouTubeを参考。",
+    additional:
+      "リセット台を妄想タイム抜けまで打つ。 詳しい狙い目はスロプロ狐様のYouTubeを参考。",
     link: "",
   },
   {
