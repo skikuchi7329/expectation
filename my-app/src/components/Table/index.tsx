@@ -28,7 +28,7 @@ export default function Table() {
         {data.map((row, index) => (
           <React.Fragment key={index}>
             <tr onClick={() => handleRowClick(index)}>
-              <td>{row.title}</td>
+              <td className="nowrap">{row.title}</td>
               <td>{row.target}</td>
               <td>{row.quit}</td>
             </tr>

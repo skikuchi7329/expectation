@@ -38,10 +38,9 @@ export default function RootLayout({
 }
 
 
-const StyledHeader = styled.div`
+const StyledHeader = styled.header`
+    display: flex;
     align-items: center;
-  a {
-    text-decoration: none;
-  }
+    vertical-align: middle;
 `
 

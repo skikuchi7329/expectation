@@ -26,13 +26,8 @@ const StyledTable = styled.div`
     }
   }
 
-  .closeMenu {
-    display: none;
-  }
-
-  .closeMenu.is-open {
-    display: flex;
-    flex-direction: column;
+  .nowrap {
+    white-space: nowrap;
   }
 `
 
