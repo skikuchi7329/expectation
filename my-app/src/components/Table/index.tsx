@@ -1,18 +1,15 @@
-import React, { useState } from "react";
-import { data } from "../../../data/data";
+import React, { useState } from 'react';
+import { data } from '../../../data/data';
 
-export default function Table() {
-  const [expandedRows, setExpandedRows] = useState<number[]>([]);
+export default function MyTable() {
+  const [openedMenu, setOpenedMenu] = useState<number | null>(null);
 
   const handleRowClick = (index: number) => {
-    const currentIndex = expandedRows.indexOf(index);
-    const newExpandedRows = [...expandedRows];
-    if (currentIndex === -1) {
-      newExpandedRows.push(index);
+    if (openedMenu === index) {
+      setOpenedMenu(null);
     } else {
-      newExpandedRows.splice(currentIndex, 1);
+      setOpenedMenu(index);
     }
-    setExpandedRows(newExpandedRows);
   };
 
   return (
@@ -25,20 +22,24 @@ export default function Table() {
         </tr>
       </thead>
       <tbody>
-        {data.map((row, index) => (
+        {data.map((item, index) => (
           <React.Fragment key={index}>
             <tr onClick={() => handleRowClick(index)}>
-              <td className="nowrap">{row.title}</td>
-              <td>{row.target}</td>
-              <td>{row.quit}</td>
+              <td>{item.title}</td>
+              <td>{item.target}</td>
+              <td>{item.quit}</td>
             </tr>
-            {expandedRows.includes(index) && (
+            {openedMenu === index && (
               <tr>
                 <td colSpan={3}>
-                  <div>
-                    <p>補足: {row.additional}</p>
-                    <p>リンク: {row.link}</p>
-                  </div>
+                  {item.additional && <div>{item.additional}</div>}
+                  {item.link && (
+                    <div>
+                      <a href={item.link} target="_blank" rel="noopener noreferrer">
+                        {item.link}
+                      </a>
+                    </div>
+                  )}
                 </td>
               </tr>
             )}
