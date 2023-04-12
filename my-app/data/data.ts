@@ -316,4 +316,11 @@ export const data = [
     additional: "期待値見える化様より引用",
     link: "https://slotjin.com/tenjoukitaichi/shinonimusha/#2",
   },
+  {
+    title: "新鬼武者2",
+    target: "550~ ※状態不問",
+    quit: "即やめ",
+    additional: "期待値見える化様より引用",
+    link: "https://slotjin.com/tenjoukitaichi/shinonimusha2/#3",
+  },
 ];
