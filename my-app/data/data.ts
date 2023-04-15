@@ -323,4 +323,11 @@ export const data = [
     additional: "期待値見える化様より引用",
     link: "https://slotjin.com/tenjoukitaichi/shinonimusha2/#3",
   },
+  {
+    title: "新北斗無双",
+    target: "180~",
+    quit: "有利消灯やめ、有利区間継続なら続行",
+    additional: "期待値見える化様より引用",
+    link: "https://slotjin.com/tenjoukitaichi/hokutomusou/",
+  },
 ];
