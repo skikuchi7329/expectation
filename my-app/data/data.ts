@@ -330,4 +330,18 @@ export const data = [
     additional: "期待値見える化様より引用",
     link: "https://slotjin.com/tenjoukitaichi/hokutomusou/",
   },
+  {
+    title: "スカイガールゼロノツバサ",
+    target: "385~",
+    quit: "ボーナス・AT終了後即やめ",
+    additional: "期待値見える化様より引用",
+    link: "https://slotjin.com/tenjoukitaichi/skygirls3-hyena/#3-1",
+  },
+  {
+    title: "スーパーハナハナ",
+    target: "700~ リセット台を0~64ゲーム回す",
+    quit: "有利ランプ消灯後、64ゲーム回してやめ",
+    additional: "有利区間ランプによるリセット判別ができないたので注意 期待値見える化様より引用",
+    link: "https://note.com/dakuo_slot/n/n7f1742cbea42",
+  },
 ];
