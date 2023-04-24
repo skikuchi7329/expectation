@@ -430,4 +430,11 @@ export const data = [
     additional:"",
     link: "",
   },
+  {
+    title: "1000ちゃん",
+    target: "470~",
+    quit: "ボーナスorAT後のCZ終了後、有利区間ランプ消灯やめ",
+    additional:"",
+    link: "",
+  },
 ];
