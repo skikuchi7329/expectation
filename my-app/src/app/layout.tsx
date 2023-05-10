@@ -22,13 +22,13 @@ export default function RootLayout({
           <StyledHeader>
             <header>
               <h1><Link href="/">スロットのカチカタ</Link></h1>
-              <nav>
+              <div className='navigation'>
                 <ul>
                   <li><Link href="/">HOME</Link></li>
                   <li><Link href="/ichiran">一覧</Link></li>
                   <li><Link href="/contact">コンタクト</Link></li>
                 </ul>
-              </nav>
+              </div>
             </header>
           </StyledHeader>
           <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
@@ -38,9 +38,14 @@ export default function RootLayout({
 }
 
 
-const StyledHeader = styled.header`
-    display: flex;
-    align-items: center;
-    vertical-align: middle;
+const StyledHeader = styled.div`
+  margin: 0 auto;
+  h1 {
+    margin: 0 auto;
+  }
+  
+  li {
+    list-style: none;
+  }
 `
 
