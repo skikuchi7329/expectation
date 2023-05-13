@@ -458,4 +458,11 @@ export const data = [
     additional:"アイキャッチ緑or赤or紫の場合はボーナス当選まで続行 アイキャッチやステージをしっかり調べる必要があります。",
     link: "",
   },
+  {
+    title: "タイガー&バニーSP",
+    target: "200~",
+    quit: "有利区間ランプ消灯後、即やめ",
+    additional:"",
+    link: "",
+  },
 ];
