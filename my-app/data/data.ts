@@ -465,4 +465,32 @@ export const data = [
     additional:"",
     link: "",
   },
+  {
+    title: "対魔道学園35試験小隊",
+    target: "180~",
+    quit: "有利区間ランプ消灯後、即やめ",
+    additional:"",
+    link: "",
+  },
+  {
+    title: "鉄拳4",
+    target: "620~",
+    quit: "有利区間ランプ消灯後、即やめ",
+    additional:"有利区間点灯台は有利区間消灯まで打つことができます。（たまに落ちてる）。",
+    link: "",
+  },
+  {
+    title: "鉄拳4 デビルver.",
+    target: "有利1回目380~ モードB,C後(前回550G or 350G当選後)0~ デビルゾーン0~",
+    quit: "有利区間750G消化したCZ後⇨即やめ AT終了後⇨デビルゾーン突入時は消化してやめ",
+    additional:"より詳しい狙い目はパチスロメソッド様、及び各種有料ノートを参考",
+    link: "https://slotmethod.jp/archives/6632/",
+  },
+  {
+    title: "鉄拳4 デビルアルティメットver.",
+    target: "0スルー70~ 1スルー140~ 2スルー70~ATまで",
+    quit: "CZ後はデビルゾーン確認やめ AT後は即やめ",
+    additional:"前回4スルー以上で弱ATの場合はかなり狙い目を下げれる",
+    link: "",
+  },
 ];
