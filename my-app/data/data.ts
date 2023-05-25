@@ -493,4 +493,11 @@ export const data = [
     additional:"前回4スルー以上で弱ATの場合はかなり狙い目を下げれる",
     link: "",
   },
+  {
+    title: "鉄拳5",
+    target: "400~",
+    quit: "CZ後は32Gやめ AT後は鉄拳チャンス後即やめ",
+    additional:"CZ後はデータカウンターとずれる可能性があるので液晶ゲーム数を確認",
+    link: "",
+  },
 ];
